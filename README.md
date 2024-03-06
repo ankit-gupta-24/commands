@@ -24,5 +24,11 @@ export PATH=$PATH:/usr/local/go/bin
 
 # ***********no raft leader elected**********
 ifconfig
+
 sudo apt-get install ethtool
+
 sudo ethtool -K <interface> tx off
+
+# install firewallmd
+
+sudo apt -y install firewalld
