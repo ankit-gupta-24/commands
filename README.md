@@ -21,3 +21,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 # export go path when terminal starts or when you see go not found
 export PATH=$PATH:/usr/local/go/bin
+
+# ***********no raft leader elected**********
+ifconfig
+sudo apt-get install ethtool
+sudo ethtool -K <interface> tx off
